@@ -14,11 +14,11 @@ function App() {
     <Header/>
     <Suspense fallback={<p>...</p>}>
       <Routes>
-        <Route path='/' element={<Landing/>}></Route>
-        <Route path='/movies' element={<MovieList/>}></Route>
-        <Route path='/movies/:mvid' element={<MoviePage/>}>
-          {/* <Route path='/movies/:mvid/cast'></Route>
-          <Route path='/movies/:mvid/reviews'></Route> */}
+        <Route path='/absolute-cinema' element={<Landing/>}></Route>
+        <Route path='/absolute-cinema/movies' element={<MovieList/>}></Route>
+        <Route path='/absolute-cinema/movies/:mvid' element={<MoviePage/>}>
+          {/* <Route path='/absolute-cinema/movies/:mvid/cast'></Route>
+          <Route path='/absolute-cinema/movies/:mvid/reviews'></Route> */}
         </Route>
       </Routes>
       {/* <input type='text'/>
