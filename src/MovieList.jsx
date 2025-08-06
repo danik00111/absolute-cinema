@@ -17,7 +17,7 @@ const MovieList =()=> {
   },[])
   
   return (<>
-    <input type='text' onChange={(e=>setFilter(e.target.value))}/>
+    <input type='text' placeholder='Search...' onChange={(e=>setFilter(e.target.value))}/>
     <div id='movies-cont'>
       <div className='movie'>
         {movies.filter(x=>(

@@ -17,10 +17,20 @@ const MoviePage =()=> {
   return (<>
     {mvid}
     <div id='movie-title' style={{marginTop:'16px'}}>
-    {movie.title ?? movie.name}
+      <b>{movie.title ?? movie.name}</b>
     </div>
-    <div id='movie-overview' style={{width:'400px',margin:'16px auto 0'}}>
-    {movie.overview}
+    <br/>
+    <div id='movie-overview' style={{width:'400px',margin:'0 auto'}}>
+      <div id="movie-desc" style={{
+        width: '368px',
+        padding: '16px',
+        margin: '0 auto',
+        backgroundImage: `linear-gradient(to bottom right, #ffffffc0,#ffffff40), url('https://image.tmdb.org/t/p/w400${movie.backdrop_path}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center'
+      }}>
+        {movie.overview}
+      </div>
     </div>
   </>)
 }; export default MoviePage;
